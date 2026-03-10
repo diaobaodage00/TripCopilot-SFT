@@ -2,6 +2,15 @@ from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments
 from peft import LoraConfig, get_peft_model
 from trl import SFTTrainer
+import torch
+
+print("cuda available:", torch.cuda.is_available())
+print("cuda device count:", torch.cuda.device_count())
+if torch.cuda.is_available():
+    print("cuda name:", torch.cuda.get_device_name(0))
+else:
+    print("running on CPU")
+
 
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
 TRAIN_PATH = "data/processed/train.jsonl"
@@ -44,7 +53,7 @@ def main():
         per_device_eval_batch_size=1,
         gradient_accumulation_steps=4,
         learning_rate=2e-4,
-        num_train_epochs=1,
+        num_train_epochs=5,
         logging_steps=1,
         eval_steps=5,
         save_steps=5,
