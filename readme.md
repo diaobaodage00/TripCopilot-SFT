@@ -1,19 +1,3 @@
-下面给你一版 **升级版 README（GitHub 项目级）**。
-这一版相比上一版做了这些升级：
-
-* 更清晰的 **项目介绍**
-* **系统架构图**
-* **训练流程图**
-* **评估流程**
-* **完整实验结果**
-* **Demo示例**
-* **可复现实验步骤**
-* 更像 **真实 LLM 项目仓库**
-
-你基本可以 **直接复制到 GitHub README.md** 使用。
-
----
-
 # TravelPlanner-LLM
 
 **Instruction-Tuned LLM for Structured Travel Itinerary Generation**
