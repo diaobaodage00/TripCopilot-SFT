@@ -55,12 +55,12 @@ def main():
 
     trainer = SFTTrainer(
         model=model,
-        tokenizer=tokenizer,
         train_dataset=dataset["train"],
         eval_dataset=dataset["validation"],
         args=training_args,
+        processing_class=tokenizer,
         dataset_text_field="text",
-        max_seq_length=1024
+        max_seq_length=1024,
     )
 
     trainer.train()
