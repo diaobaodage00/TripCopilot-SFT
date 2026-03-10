@@ -58,9 +58,7 @@ def main():
         train_dataset=dataset["train"],
         eval_dataset=dataset["validation"],
         args=training_args,
-        processing_class=tokenizer,
-        dataset_text_field="text",
-        max_seq_length=1024,
+        processing_class=tokenizer
     )
 
     trainer.train()
