@@ -1,0 +1,15 @@
+torch>=2.2.0
+transformers>=4.46.0
+datasets>=2.20.0
+peft>=0.12.0
+trl>=0.10.1
+accelerate>=0.34.0
+bitsandbytes>=0.43.0
+sentencepiece>=0.2.0
+scikit-learn>=1.5.0
+pandas>=2.2.2
+numpy>=1.26.4
+tqdm>=4.66.4
+gradio>=4.44.0
+jsonlines>=4.0.0
+matplotlib>=3.9.0
