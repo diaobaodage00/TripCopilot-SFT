@@ -48,7 +48,7 @@ def main():
         logging_steps=1,
         eval_steps=5,
         save_steps=5,
-        evaluation_strategy="steps",
+        eval_strategy="steps",
         save_strategy="steps",
         report_to="none"
     )
